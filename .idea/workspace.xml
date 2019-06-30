@@ -1,39 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ce63705-be40-4298-9a1c-485a84d10440" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application/src/test/java/com/github/me/ServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/github/me/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/github/me/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/classes/META-INF/application-info.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/target/classes/META-INF/application-info.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/classes/native-image.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/target/classes/native-image.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/generated-sources/gizmo/io/quarkus/deployment/steps/ArcAnnotationProcessor$build8.zig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/generated-sources/gizmo/io/quarkus/deployment/steps/ConfigBuildStep$validateConfigProperties9.zig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/generated-sources/gizmo/io/quarkus/deployment/steps/LifecycleEventsBuildStep$startupEvent14.zig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/generated-sources/gizmo/io/quarkus/deployment/steps/LoggingResourceProcessor$setupLoggingRuntimeInit3.zig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/generated-sources/gizmo/io/quarkus/deployment/steps/LoggingResourceProcessor$setupLoggingStaticInit2.zig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/generated-sources/gizmo/io/quarkus/deployment/steps/ResteasyServerCommonProcessor$setupInjection11.zig" beforeDir="false" afterPath="$PROJECT_DIR$/application/target/generated-sources/gizmo/io/quarkus/deployment/steps/ResteasyServerCommonProcessor$setupInjection11.zig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/generated-sources/gizmo/io/quarkus/deployment/steps/RuntimeBeanProcessor$build1.zig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/generated-sources/gizmo/io/quarkus/deployment/steps/SubstrateConfigBuildStep$build7.zig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/generated-sources/gizmo/io/quarkus/deployment/steps/ThreadPoolSetup$createExecutor4.zig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/generated-sources/gizmo/io/quarkus/deployment/steps/UndertowArcIntegrationBuildStep$integrateRequestContext10.zig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/generated-sources/gizmo/io/quarkus/deployment/steps/UndertowBuildStep$boot13.zig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/generated-sources/gizmo/io/quarkus/deployment/steps/UndertowBuildStep$build12.zig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/generated-sources/gizmo/io/quarkus/runner/ApplicationImpl1.zig" beforeDir="false" afterPath="$PROJECT_DIR$/application/target/generated-sources/gizmo/io/quarkus/runner/ApplicationImpl1.zig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/generated-sources/gizmo/io/quarkus/runner/AutoFeature.zig" beforeDir="false" afterPath="$PROJECT_DIR$/application/target/generated-sources/gizmo/io/quarkus/runner/AutoFeature.zig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/lib/maven.dependency.pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/application/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/wiring-classes/META-INF/build-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/target/wiring-classes/META-INF/build-config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/wiring-classes/META-INF/quarkus-default-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/target/wiring-classes/META-INF/quarkus-default-config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moduleA/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/moduleA/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moduleB/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/moduleB/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3ce63705-be40-4298-9a1c-485a84d10440" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/moduleA/target/" />
