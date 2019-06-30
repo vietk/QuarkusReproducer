@@ -2,7 +2,7 @@
 //     Access =  public synthetic
 //     Extends: java/lang/Object
 //     Implements:
-//         org/graalvm/nativeimage/Feature
+//         org/graalvm/nativeimage/hosted/Feature
 
 // DO NOT MODIFY.  This is not actually a source file; it is a textual representation of generated code.
 // Use only for debugging purposes.
@@ -17,57 +17,6 @@ Method <init> : V
     // Method descriptor: ()V
     INVOKESPECIAL java/lang/Object#<init>
     RETURN
-    
-}
-
-// Access: private static
-Method registerClass9 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "org.eclipse.yasson.JsonBindingProvider"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
     
 }
 
@@ -103,1691 +52,11 @@ Method registerClass7 : V
     AASTORE
     ALOAD 1
     // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass18 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "org.jboss.resteasy.plugins.interceptors.MessageSanitizerContainerResponseFilter"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass28 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "javax.enterprise.inject.Default"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 3
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass16 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "org.jboss.resteasy.plugins.interceptors.ClientContentEncodingAnnotationFeature"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass38 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "io.quarkus.undertow.runtime.HttpSessionContext"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass26 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "org.jboss.resteasy.microprofile.config.ServletContextConfigSource"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass0 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "java.util.ArrayList"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass14 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "org.jboss.resteasy.api.validation.ResteasyConstraintViolation"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    ASTORE 4
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 3
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    LDC (Boolean) false
-    ALOAD 4
-    // Method descriptor: (Z[Ljava/lang/reflect/Field;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass36 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "io.undertow.servlet.handlers.DefaultServlet"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass24 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "org.jboss.resteasy.plugins.interceptors.ServerContentEncodingAnnotationFeature"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass12 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "com.fasterxml.jackson.databind.ser.std.SqlDateSerializer"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 3
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass34 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "javax.enterprise.context.Initialized"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 3
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass22 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.ReactiveStreamProvider"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass4 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "java.util.LinkedHashMap"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass10 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "com.github.me.Service"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    ASTORE 4
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 3
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    LDC (Boolean) false
-    ALOAD 4
-    // Method descriptor: (Z[Ljava/lang/reflect/Field;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass32 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "javax.enterprise.inject.Any"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 3
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass20 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.sse.SseEventSinkInterceptor"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass2 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "java.util.HashSet"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass30 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "javax.enterprise.context.Destroyed"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 3
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass8 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "org.glassfish.json.JsonProviderImpl"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass6 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "java.util.TreeMap"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass19 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "io.quarkus.resteasy.runtime.RolesFilterRegistrar"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass29 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "javax.enterprise.context.BeforeDestroyed"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 3
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass17 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "org.jboss.resteasy.context.ContextFeature"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass39 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "io.quarkus.runtime.logging.InitialConfigurator"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass27 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "org.jboss.resteasy.microprofile.config.FilterConfigSource"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass15 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.CompletionStageProvider"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass37 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "io.undertow.server.protocol.http.HttpRequestParser$$generated"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass25 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "org.jboss.resteasy.microprofile.config.ServletConfigSource"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass1 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "java.util.HashMap"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass13 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "org.jboss.resteasy.api.validation.ViolationReport"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    ASTORE 4
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 3
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    LDC (Boolean) false
-    ALOAD 4
-    // Method descriptor: (Z[Ljava/lang/reflect/Field;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass35 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "io.quarkus.resteasy.runtime.ResteasyFilter"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass23 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "org.jboss.resteasy.plugins.interceptors.CacheControlFeature"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ** label3
     GOTO label4
     ** label5
@@ -1805,13 +74,14 @@ Method registerClass23 : V
 // Access: public
 Method beforeAnalysis : V
 (
-    arg 1 = Lorg/graalvm/nativeimage/Feature$BeforeAnalysisAccess;
+    arg 1 = Lorg/graalvm/nativeimage/hosted/Feature$BeforeAnalysisAccess;
 ) {
     ** label1
     ** label2
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 4
+    LDC (Type) Lorg/graalvm/nativeimage/impl/RuntimeClassInitializationSupport;
+    // Method descriptor: (Ljava/lang/Class;)Ljava/lang/Object;
+    INVOKESTATIC org/graalvm/nativeimage/ImageSingletons#lookup
+    ASTORE 3
     LDC (Type) Lio/quarkus/runner/AutoFeature;
     // Method descriptor: ()Ljava/lang/ClassLoader;
     INVOKEVIRTUAL java/lang/Class#getClassLoader
@@ -1822,14 +92,13 @@ Method beforeAnalysis : V
     ALOAD 2
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
-    ASTORE 3
-    ALOAD 4
-    LDC (Integer) 0
+    ASTORE 4
     ALOAD 3
-    AASTORE
+    CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 4
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeClassInitialization#delayClassInitialization
+    LDC (String) "Quarkus"
+    // Method descriptor: (Ljava/lang/Class;Ljava/lang/String;)V
+    INVOKEINTERFACE org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport#initializeAtRunTime
     ** label4
     GOTO label5
     ** label6
@@ -1849,13 +118,12 @@ Method beforeAnalysis : V
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 6
-    ALOAD 4
-    LDC (Integer) 0
+    ALOAD 3
+    CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 6
-    AASTORE
-    ALOAD 4
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeClassInitialization#delayClassInitialization
+    LDC (String) "Quarkus"
+    // Method descriptor: (Ljava/lang/Class;Ljava/lang/String;)V
+    INVOKEINTERFACE org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport#initializeAtRunTime
     ** label9
     GOTO label10
     ** label11
@@ -1875,13 +143,12 @@ Method beforeAnalysis : V
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 8
-    ALOAD 4
-    LDC (Integer) 0
+    ALOAD 3
+    CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 8
-    AASTORE
-    ALOAD 4
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeClassInitialization#delayClassInitialization
+    LDC (String) "Quarkus"
+    // Method descriptor: (Ljava/lang/Class;Ljava/lang/String;)V
+    INVOKEINTERFACE org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport#initializeAtRunTime
     ** label14
     GOTO label15
     ** label16
@@ -1901,13 +168,12 @@ Method beforeAnalysis : V
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 10
-    ALOAD 4
-    LDC (Integer) 0
+    ALOAD 3
+    CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 10
-    AASTORE
-    ALOAD 4
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeClassInitialization#delayClassInitialization
+    LDC (String) "Quarkus"
+    // Method descriptor: (Ljava/lang/Class;Ljava/lang/String;)V
+    INVOKEINTERFACE org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport#initializeAtRunTime
     ** label19
     GOTO label20
     ** label21
@@ -1927,13 +193,12 @@ Method beforeAnalysis : V
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 12
-    ALOAD 4
-    LDC (Integer) 0
+    ALOAD 3
+    CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 12
-    AASTORE
-    ALOAD 4
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeClassInitialization#delayClassInitialization
+    LDC (String) "Quarkus"
+    // Method descriptor: (Ljava/lang/Class;Ljava/lang/String;)V
+    INVOKEINTERFACE org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport#initializeAtRunTime
     ** label24
     GOTO label25
     ** label26
@@ -1946,9 +211,6 @@ Method beforeAnalysis : V
     // Try from label23 to label24
     // Catch java/lang/Throwable by going to label26
     ** label25
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 15
     LDC (Type) Lio/quarkus/runner/AutoFeature;
     // Method descriptor: ()Ljava/lang/ClassLoader;
     INVOKEVIRTUAL java/lang/Class#getClassLoader
@@ -1959,19 +221,18 @@ Method beforeAnalysis : V
     ALOAD 14
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
-    ASTORE 16
+    ASTORE 15
+    ALOAD 3
+    CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 15
-    LDC (Integer) 0
-    ALOAD 16
-    AASTORE
-    ALOAD 15
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeClassInitialization#rerunClassInitialization
+    LDC (String) "Quarkus"
+    // Method descriptor: (Ljava/lang/Class;Ljava/lang/String;)V
+    INVOKEINTERFACE org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport#rerunInitialization
     ** label29
     GOTO label30
     ** label31
-    ASTORE 17
-    ALOAD 17
+    ASTORE 16
+    ALOAD 16
     // Method descriptor: ()V
     INVOKEVIRTUAL java/lang/Throwable#printStackTrace
     ** label32
@@ -1985,19 +246,18 @@ Method beforeAnalysis : V
     ALOAD 14
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
-    ASTORE 18
-    ALOAD 15
-    LDC (Integer) 0
-    ALOAD 18
-    AASTORE
-    ALOAD 15
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeClassInitialization#rerunClassInitialization
+    ASTORE 17
+    ALOAD 3
+    CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
+    ALOAD 17
+    LDC (String) "Quarkus"
+    // Method descriptor: (Ljava/lang/Class;Ljava/lang/String;)V
+    INVOKEINTERFACE org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport#rerunInitialization
     ** label34
     GOTO label35
     ** label36
-    ASTORE 19
-    ALOAD 19
+    ASTORE 18
+    ALOAD 18
     // Method descriptor: ()V
     INVOKEVIRTUAL java/lang/Throwable#printStackTrace
     ** label37
@@ -2017,20 +277,23 @@ Method beforeAnalysis : V
     LDC (String) "META-INF/services/org.jboss.logmanager.EmbeddedConfigurator"
     // Method descriptor: (Ljava/lang/String;)V
     INVOKESTATIC io/quarkus/runtime/ResourceHelper#registerResources
+    LDC (String) "META-INF/services/org.eclipse.yasson.spi.JsonbComponentInstanceCreator"
+    // Method descriptor: (Ljava/lang/String;)V
+    INVOKESTATIC io/quarkus/runtime/ResourceHelper#registerResources
     LDC (Integer) 1
     ANEWARRAY java/lang/Class
-    ASTORE 20
-    ALOAD 20
+    ASTORE 19
+    ALOAD 19
     LDC (Integer) 0
     LDC (Type) Ljava/lang/String;
     AASTORE
     LDC (Type) Lcom/oracle/svm/core/jdk/LocalizationSupport;
     LDC (String) "addBundleToCache"
-    ALOAD 20
+    ALOAD 19
     // Method descriptor: (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethod
-    ASTORE 22
-    ALOAD 22
+    ASTORE 20
+    ALOAD 20
     CHECKCAST java/lang/reflect/AccessibleObject
     LDC (Boolean) true
     // Method descriptor: (Z)V
@@ -2042,14 +305,14 @@ Method beforeAnalysis : V
     ** label38
     LDC (Integer) 1
     ANEWARRAY java/lang/Object
-    ASTORE 23
-    ALOAD 23
+    ASTORE 22
+    ALOAD 22
     LDC (Integer) 0
     LDC (String) "yasson-messages"
     AASTORE
-    ALOAD 22
+    ALOAD 20
     ALOAD 21
-    ALOAD 23
+    ALOAD 22
     // Method descriptor: (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     INVOKEVIRTUAL java/lang/reflect/Method#invoke
     POP
@@ -2065,14 +328,14 @@ Method beforeAnalysis : V
     ** label43
     LDC (Integer) 1
     ANEWARRAY java/lang/Object
-    ASTORE 24
-    ALOAD 24
+    ASTORE 23
+    ALOAD 23
     LDC (Integer) 0
     LDC (String) "messages"
     AASTORE
-    ALOAD 22
+    ALOAD 20
     ALOAD 21
-    ALOAD 24
+    ALOAD 23
     // Method descriptor: (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     INVOKEVIRTUAL java/lang/reflect/Method#invoke
     POP
@@ -2165,11 +428,37 @@ Method beforeAnalysis : V
     INVOKESTATIC io/quarkus/runner/AutoFeature#registerClass38
     // Method descriptor: ()V
     INVOKESTATIC io/quarkus/runner/AutoFeature#registerClass39
+    // Method descriptor: ()V
+    INVOKESTATIC io/quarkus/runner/AutoFeature#registerClass40
+    // Method descriptor: ()V
+    INVOKESTATIC io/quarkus/runner/AutoFeature#registerClass41
+    // Method descriptor: ()V
+    INVOKESTATIC io/quarkus/runner/AutoFeature#registerClass42
+    // Method descriptor: ()V
+    INVOKESTATIC io/quarkus/runner/AutoFeature#registerClass43
+    // Method descriptor: ()V
+    INVOKESTATIC io/quarkus/runner/AutoFeature#registerClass44
+    // Method descriptor: ()V
+    INVOKESTATIC io/quarkus/runner/AutoFeature#registerClass45
+    // Method descriptor: ()V
+    INVOKESTATIC io/quarkus/runner/AutoFeature#registerClass46
+    // Method descriptor: ()V
+    INVOKESTATIC io/quarkus/runner/AutoFeature#registerClass47
+    // Method descriptor: ()V
+    INVOKESTATIC io/quarkus/runner/AutoFeature#registerClass48
+    // Method descriptor: ()V
+    INVOKESTATIC io/quarkus/runner/AutoFeature#registerClass49
+    // Method descriptor: ()V
+    INVOKESTATIC io/quarkus/runner/AutoFeature#registerClass50
+    // Method descriptor: ()V
+    INVOKESTATIC io/quarkus/runner/AutoFeature#registerClass51
+    // Method descriptor: ()V
+    INVOKESTATIC io/quarkus/runner/AutoFeature#registerClass52
     ** label48
     GOTO label49
     ** label50
-    ASTORE 25
-    ALOAD 25
+    ASTORE 24
+    ALOAD 24
     // Method descriptor: ()V
     INVOKEVIRTUAL java/lang/Throwable#printStackTrace
     ** label51
@@ -2183,13 +472,268 @@ Method beforeAnalysis : V
 }
 
 // Access: private static
-Method registerClass11 : V
+Method registerClass28 : V
 (
     // (no arguments)
 ) {
     ** label1
     ** label2
-    LDC (String) "com.fasterxml.jackson.module.jaxb.JaxbAnnotationIntrospector"
+    LDC (String) "org.jboss.resteasy.plugins.interceptors.ClientContentEncodingAnnotationFeature"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass16 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.plugins.providers.sse.SseEventOutputProvider"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass48 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "io.undertow.servlet.handlers.DefaultServlet"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass36 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.plugins.providers.InputStreamProvider"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass24 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.plugins.interceptors.CacheControlFeature"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass12 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "com.fasterxml.jackson.databind.ser.std.SqlDateSerializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2214,15 +758,15 @@ Method registerClass11 : V
     AASTORE
     ALOAD 1
     // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ** label3
     GOTO label4
     ** label5
@@ -2238,13 +782,13 @@ Method registerClass11 : V
 }
 
 // Access: private static
-Method registerClass33 : V
+Method registerClass44 : V
 (
     // (no arguments)
 ) {
     ** label1
     ** label2
-    LDC (String) "javax.inject.Named"
+    LDC (String) "javax.enterprise.inject.Any"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2269,15 +813,15 @@ Method registerClass33 : V
     AASTORE
     ALOAD 1
     // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ** label3
     GOTO label4
     ** label5
@@ -2293,7 +837,58 @@ Method registerClass33 : V
 }
 
 // Access: private static
-Method registerClass21 : V
+Method registerClass32 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.plugins.providers.ReaderProvider"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass20 : V
 (
     // (no arguments)
 ) {
@@ -2324,11 +919,741 @@ Method registerClass21 : V
     AASTORE
     ALOAD 1
     // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass2 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "java.util.HashSet"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass52 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "io.quarkus.jsonb.QuarkusJsonbComponentInstanceCreator"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass40 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "javax.enterprise.inject.Default"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    ASTORE 3
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass6 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "java.util.TreeMap"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass29 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.plugins.providers.DefaultNumberWriter"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass17 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.context.ContextFeature"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass49 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "io.undertow.server.protocol.http.HttpRequestParser$$generated"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass37 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.microprofile.config.ServletConfigSource"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass25 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.plugins.providers.StringTextStar"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass1 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "java.util.HashMap"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass13 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.api.validation.ViolationReport"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    ASTORE 3
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    ASTORE 4
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    LDC (Boolean) false
+    ALOAD 4
+    // Method descriptor: (Z[Ljava/lang/reflect/Field;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass45 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "javax.inject.Named"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    ASTORE 3
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass33 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.plugins.providers.sse.SseEventSinkInterceptor"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass21 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.plugins.providers.DefaultBooleanWriter"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ** label3
     GOTO label4
     ** label5
@@ -2375,11 +1700,11 @@ Method registerClass5 : V
     AASTORE
     ALOAD 1
     // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ** label3
     GOTO label4
     ** label5
@@ -2395,7 +1720,1263 @@ Method registerClass5 : V
 }
 
 // Access: private static
-Method registerClass31 : V
+Method registerClass41 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "javax.enterprise.context.BeforeDestroyed"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    ASTORE 3
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass50 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "io.quarkus.undertow.runtime.HttpSessionContext"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass9 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.eclipse.yasson.JsonBindingProvider"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass18 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.plugins.interceptors.MessageSanitizerContainerResponseFilter"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass38 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.microprofile.config.ServletContextConfigSource"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass26 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.plugins.interceptors.ServerContentEncodingAnnotationFeature"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass0 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "java.util.ArrayList"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass14 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.api.validation.ResteasyConstraintViolation"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    ASTORE 3
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    ASTORE 4
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    LDC (Boolean) false
+    ALOAD 4
+    // Method descriptor: (Z[Ljava/lang/reflect/Field;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass46 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "javax.enterprise.context.Initialized"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    ASTORE 3
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass34 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.plugins.providers.DataSourceProvider"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass22 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.plugins.providers.ByteArrayProvider"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass4 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "java.util.LinkedHashMap"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass10 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "com.github.me.Service"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    ASTORE 3
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    ASTORE 4
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    LDC (Boolean) false
+    ALOAD 4
+    // Method descriptor: (Z[Ljava/lang/reflect/Field;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass42 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "javax.enterprise.context.Destroyed"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    ASTORE 3
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass30 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.plugins.providers.StreamingOutputProvider"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass8 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.glassfish.json.JsonProviderImpl"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass19 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.plugins.providers.DefaultTextPlain"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass39 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.microprofile.config.FilterConfigSource"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass27 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.plugins.providers.CompletionStageProvider"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass15 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.plugins.providers.FileProvider"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass47 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "io.quarkus.resteasy.runtime.ResteasyFilter"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass35 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.plugins.providers.FileRangeWriter"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass23 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "org.jboss.resteasy.plugins.providers.ReactiveStreamProvider"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass11 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "com.fasterxml.jackson.module.jaxb.JaxbAnnotationIntrospector"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    ASTORE 3
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass43 : V
 (
     // (no arguments)
 ) {
@@ -2426,15 +3007,66 @@ Method registerClass31 : V
     AASTORE
     ALOAD 1
     // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass31 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "io.quarkus.resteasy.runtime.RolesFilterRegistrar"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ** label3
     GOTO label4
     ** label5
@@ -2481,11 +3113,62 @@ Method registerClass3 : V
     AASTORE
     ALOAD 1
     // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/RuntimeReflection#register
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass51 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "io.quarkus.runtime.logging.InitialConfigurator"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ** label3
     GOTO label4
     ** label5

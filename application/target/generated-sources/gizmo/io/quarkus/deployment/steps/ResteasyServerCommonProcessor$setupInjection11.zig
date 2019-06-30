@@ -100,21 +100,21 @@ Method deploy_0 : V
     ALOAD 8
     AASTORE
     ALOAD 1
-    LDC (String) "proxykey13"
+    LDC (String) "proxykey16"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 9
+    ASTORE 10
     ALOAD 2
     LDC (Integer) 4
     AALOAD
-    ASTORE 10
+    ASTORE 9
     ALOAD 2
     LDC (Integer) 0
     AALOAD
     CHECKCAST io/quarkus/resteasy/server/common/runtime/ResteasyServerCommonTemplate
-    ALOAD 9
-    CHECKCAST io/quarkus/arc/runtime/BeanContainer
     ALOAD 10
+    CHECKCAST io/quarkus/arc/runtime/BeanContainer
+    ALOAD 9
     CHECKCAST java/util/List
     // Method descriptor: (Lio/quarkus/arc/runtime/BeanContainer;Ljava/util/List;)V
     INVOKEVIRTUAL io/quarkus/resteasy/server/common/runtime/ResteasyServerCommonTemplate#setupIntegration
